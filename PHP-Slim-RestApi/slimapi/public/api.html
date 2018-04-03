@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Api</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/simplex/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#"><img src="img/logo.png" width="130" height="25"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">SlimItem</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<br>
+<div class="container">
+    <h1>Add Post</h1>
+    <form id="postForm">
+        <div class="form-group">
+            <label>Title</label>
+            <input type="text" id="title" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Body</label>
+            <textarea id="body" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <label>Category</label>
+            <span id="category_list"></span>
+        </div>
+        <input type="hidden" id="hidden">
+        <input type="submit" id="update" value="Update" class="btn btn-primary">
+        <input type="submit" id="submit" value="Submit" class="btn btn-primary">
+    </form>
+    <hr>
+    <h1>Posts</h1>
+    <div>
+        <div id="posts"></div>
+    </div>
+    <hr>
+    <h1>Categories</h1>
+    <div>
+        <div id="categories"></div>
+    </div>
+</div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
